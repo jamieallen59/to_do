@@ -4,6 +4,7 @@
 
 <head>
 	<script src="https://code.angularjs.org/1.0.0rc3/angular-1.0.0rc3.min.js"></script>
+	<script src='https://documentcloud.github.io/underscore/underscore-min.js'></script>
 	<link rel="stylesheet" type="text/css" href="todo.css">
 
 	<script type="text/javascript" src='todo.js'></script>
@@ -11,7 +12,8 @@
 
 <body>
 	<section ng-controller='TodoCtrl'>
-		<h2>Total todos: {{ totalTodos }}</h2>
+
+		<h2>Total todos: {{ getTotalTodos() }}</h2>
 
 		<ul class='todo list'>
 			<li ng-repeat='todo in todos'>
@@ -23,8 +25,9 @@
 		<form class='form'>
 			<input type='text' ng-model='formTodoText' ng-model-instant>
 			<button class='button' ng-click='addTodo()'><img class='add-icon' src='images/add.png'></img>Add</button>
-
 		</form>
+
+		<button class='clear-button' ng-click='clearCompleted()'>Clear Completed</button>
 
 	</section>
 

@@ -12,6 +12,13 @@ ul {
 	color: gray;
 }
 
+input.ng-valid.ng-dirty {
+	height: 36px;
+	font-size: 22px;
+	border-radius: 2px;
+	border: 1px solid #BDBDBD;
+}
+
 .button {
 	border: 1px solid #C5C4C4;
 	background: linear-gradient(#F5F5F5, rgb(219, 219, 219));
