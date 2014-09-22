@@ -12,6 +12,8 @@ section.ng-scope {
 	font-weight: 200;
 	width: 35%;
 	padding: 20px;
+	flex-direction: column;
+	display: flex;
 	border-radius: 3px;
 }
 
@@ -20,6 +22,7 @@ section.ng-scope {
 	margin-bottom: 10px;
 }
 	.list-heading {
+		color: #593325;
 		font-size: 22px;
 		border-bottom: 1px solid #DEDEDE;
 		padding-bottom: 14px;
@@ -44,9 +47,9 @@ section.ng-scope {
 .todo-input {
 	height: 37px;
 	font-size: 20px;
-	border-radius: 2px;
-	border: 1px solid #BDBDBD;
-	background: #DEDEDE;
+	width: 70%;
+	border: 1px solid #D3D3D3;
+	background: #F1F1F1;
 }
 	.todo-input:focus {
 		outline: 0;
@@ -59,18 +62,19 @@ section.ng-scope {
 }
 
 .button {
-	border: 1px solid #C5C4C4;
-	background: linear-gradient(#F5F5F5, rgb(219, 219, 219));
-	padding: 5px 10px;
+	border: 1px solid #8AB39F;
+	color: #FFF;
+	background: #8AB39F;
+	padding: 5px 20px;
 	font-size: 18px;
 	vertical-align: middle;
 	line-height: 29px;
-	border-radius: 2px;
 	cursor: pointer;
 	margin: 0px;
+	margin-left: 10px;
 }
 	.button:hover {
-		background: linear-gradient(#ECECEC, rgb(190, 190, 190));
+		background: #A0C3B2;
 	}
 	.button:active {
 		position: relative;
@@ -86,5 +90,25 @@ section.ng-scope {
 		height: 12px;
 	}
 
-
+.clear-button {
+	border: 1px solid #593325;
+	font-size: 18px;
+	padding: 5px 10px;
+	width: 187px;
+	margin-top: 8px;
+	line-height: 29px;
+	background: #593325;
+	color: #FFF;
+	cursor: pointer;
+}
+	.clear-button:hover {
+		background: #6D5045;
+	}
+	.clear-button:active {
+		position: relative;
+		top: 1px;
+	}
+	.clear-button:focus {
+		outline: 0;
+	}
 
