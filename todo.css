@@ -12,12 +12,28 @@ ul {
 	color: gray;
 }
 
-input.ng-valid.ng-dirty {
-	height: 36px;
-	font-size: 22px;
+section.ng-scope {
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+/*--- Within the form ---*/
+.form {
+	display: flex;
+}
+
+.todo-input {
+	height: 37px;
+	font-size: 20px;
 	border-radius: 2px;
 	border: 1px solid #BDBDBD;
+	background: #DEDEDE;
 }
+	.todo-input:focus {
+		outline: 0;
+		background: #FFF;
+		transition: 0.15s ease-in-out;
+	}	
 
 .button {
 	border: 1px solid #C5C4C4;
@@ -28,6 +44,7 @@ input.ng-valid.ng-dirty {
 	line-height: 29px;
 	border-radius: 2px;
 	cursor: pointer;
+	margin: 0px;
 }
 	.button:hover {
 		background: linear-gradient(#ECECEC, rgb(190, 190, 190));
@@ -39,10 +56,12 @@ input.ng-valid.ng-dirty {
 	.button:focus {
 		outline: none;
 	}
+	.add-icon {
+		padding-right: 6px;
+		vertical-align: middle;
+		margin-top: -4px;
+		height: 12px;
+	}
 
-.add-icon {
-	padding-right: 6px;
-	vertical-align: middle;
-	margin-top: -4px;
-	height: 12px;
-}
+
+

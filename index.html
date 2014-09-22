@@ -13,7 +13,7 @@
 <body>
 	<section ng-controller='TodoCtrl'>
 
-		<h2>Total todos: {{ getTotalTodos() }}</h2>
+		<h2>To Do: {{ getTotalTodos() }} items</h2>
 
 		<ul class='todo list'>
 			<li ng-repeat='todo in todos'>
@@ -23,7 +23,7 @@
 		</ul>
 
 		<form class='form'>
-			<input type='text' ng-model='formTodoText' ng-model-instant>
+			<input class='todo-input' type='text' ng-model='formTodoText' ng-model-instant>
 			<button class='button' ng-click='addTodo()'><img class='add-icon' src='images/add.png'></img>Add</button>
 		</form>
 
