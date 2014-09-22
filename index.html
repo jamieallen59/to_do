@@ -19,6 +19,13 @@
 				<span class="done-{{todo.done}}"> {{ todo.text }}</span>			
 			</li>
 		</ul>
+
+		<form class='form'>
+			<input type='text' ng-model='formTodoText' ng-model-instant>
+			<button class='button' ng-click='addTodo()'><img class='add-icon' src='images/add.png'></img>Add</button>
+
+		</form>
+
 	</section>
 
 </body>

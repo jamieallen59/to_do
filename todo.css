@@ -11,3 +11,31 @@ ul {
 	text-decoration: line-through;
 	color: gray;
 }
+
+.button {
+	border: 1px solid #C5C4C4;
+	background: linear-gradient(#F5F5F5, rgb(219, 219, 219));
+	padding: 5px 10px;
+	font-size: 18px;
+	vertical-align: middle;
+	line-height: 29px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+	.button:hover {
+		background: linear-gradient(#ECECEC, rgb(190, 190, 190));
+	}
+	.button:active {
+		position: relative;
+		top: 1px;
+	}
+	.button:focus {
+		outline: none;
+	}
+
+.add-icon {
+	padding-right: 6px;
+	vertical-align: middle;
+	margin-top: -4px;
+	height: 12px;
+}
