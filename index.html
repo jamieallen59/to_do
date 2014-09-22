@@ -6,17 +6,19 @@
 	<script src="https://code.angularjs.org/1.0.0rc3/angular-1.0.0rc3.min.js"></script>
 	<script src='https://documentcloud.github.io/underscore/underscore-min.js'></script>
 	<link rel="stylesheet" type="text/css" href="todo.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
 
 	<script type="text/javascript" src='todo.js'></script>
 </head>
 
 <body>
 	<section ng-controller='TodoCtrl'>
+		<header class='heading-container'>
+			<h2 class='list-heading'>To Do: {{ getTotalTodos() }} items</h2>
+		</header>
 
-		<h2>To Do: {{ getTotalTodos() }} items</h2>
-
-		<ul class='todo list'>
-			<li ng-repeat='todo in todos'>
+		<ul class='todo-list'>
+			<li class='each-todo' ng-repeat='todo in todos'>
 				<input type='checkbox' ng-model='todo.done'>
 				<span class="done-{{todo.done}}"> {{ todo.text }}</span>			
 			</li>

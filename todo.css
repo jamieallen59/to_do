@@ -1,20 +1,39 @@
 body {
-	font-family: "Helvetica Neue", Helvetica;
-	font-weight: 200;
+	background-color: #F2E6CE;
+	color: #1D1D1F;
 }
 
-ul {
+/*--- List section ---*/
+section.ng-scope {
+	background-color: #FFF;
+	margin-left: 40px;
+	margin-top: 40px;
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 200;
+	width: 35%;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.heading-container {
+	text-align: center;
+	margin-bottom: 10px;
+}
+	.list-heading {
+		font-size: 22px;
+		border-bottom: 1px solid #DEDEDE;
+		padding-bottom: 14px;
+	}
+
+.todo-list {
 	list-style-type: none;
+	padding-left: 30px;
+	margin: 30px 5px;
 }
 
 .done-true {
 	text-decoration: line-through;
 	color: gray;
-}
-
-section.ng-scope {
-	margin-left: 40px;
-	margin-top: 40px;
 }
 
 /*--- Within the form ---*/
@@ -34,6 +53,10 @@ section.ng-scope {
 		background: #FFF;
 		transition: 0.15s ease-in-out;
 	}	
+
+.each-todo {
+	margin: 5px;
+}
 
 .button {
 	border: 1px solid #C5C4C4;
